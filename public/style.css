@@ -1,0 +1,301 @@
+body{
+    font-family: sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+}
+
+.container{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0);
+    width: 400px;
+    text-align: center;
+}
+h1{
+    color: #333;
+    margin-bottom: 20px;
+}
+form div{
+    margin-bottom: 15px;
+    text-align:left
+}
+label{
+    font-weight: 500;
+     margin-bottom: 5px;
+    display:block; 
+}
+input[type="url"],
+input[type="text"]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+ .btn{
+    background-color: #4a90e2;
+    color:#fff;
+    padding:14px 12px;
+    border:none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #357ac9;
+}
+h2{
+    color:#555;
+    margin-top: 30px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    background-color: #fafafa;
+    margin:12px 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0);
+}
+li a{
+    color:#4a90e2;
+    text-decoration: none;
+    font-weight: 500;
+}
+li a:hover{
+    text-decoration: underline;
+}
+
+:root {
+    --primary-color: #4f46e5;
+    --bg-color: #f3f4f6;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --white: #ffffff;
+    --success: #10b981;
+    --danger: #ef4444;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Inter', -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    background: var(--white);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Avatar Header */
+.avatar-header {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+}
+
+/* Profile Info */
+.profile-name {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    margin: 0.5rem 0;
+}
+
+.profile-email {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.profile-stats strong {
+    display: block;
+    color: var(--text-main);
+    font-size: 1.1rem;
+}
+
+/* Action Buttons */
+.edit-profile {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.edit-profile a {
+    flex: 1;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.edit-profile a:first-child {
+    background: var(--primary-color);
+    color: white;
+}
+
+.edit-profile a:last-child {
+    background: #f3f4f6;
+    color: var(--text-main);
+}
+
+.edit-profile a:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Verification Badge */
+.verification-status {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.verificate-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.verified {
+    background-color: #dcfce7;
+    color: var(--success);
+}
+
+.not-verified {
+    background-color: #fee2e2;
+    color: var(--danger);
+}
+
+.verify-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Change Password */
+/* Container styling */
+.password-form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+/* Layout for the groups */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  gap: 20px;
+}
+
+.flex-row .form-group {
+  flex: 1; /* Makes both new password fields equal width */
+}
+
+/* Input styling */
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.2);
+}
+
+/* Button styling */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  .flex-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

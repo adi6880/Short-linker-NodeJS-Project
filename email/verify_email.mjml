@@ -1,0 +1,52 @@
+<mjml>
+  <mj-head>
+    <mj-title>OTP Verification</mj-title>
+    <mj-preview>Your OTP code for verification</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-button background-color="#2563EB" color="#ffffff" border-radius="6px" font-size="16px" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#F3F4F6">
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+
+        <mj-text font-size="20px" font-weight="bold" align="center">
+          Verify Your Email
+        </mj-text>
+
+        <mj-text font-size="14px" color="#555555" align="center">
+          Use the OTP below to verify your email address. This OTP is valid for 10 minutes.
+        </mj-text>
+
+        <mj-divider border-color="#E5E7EB" />
+
+        <mj-text font-size="32px" font-weight="bold" align="center" letter-spacing="4px">
+          <%=code%>
+        </mj-text>
+
+        <mj-text font-size="14px" color="#555555" align="center">
+          Or click the button below to verify instantly
+        </mj-text>
+
+        <mj-button href=<%=link%>>
+          Verify Email
+        </mj-button>
+
+        <mj-text font-size="12px" color="#9CA3AF" align="center">
+          If you did not request this, please ignore this email.
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="10px">
+      <mj-column>
+        <mj-text font-size="12px" color="#9CA3AF" align="center">
+          © 2026 Your Company. All rights reserved.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

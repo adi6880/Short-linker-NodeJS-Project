@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update URL</title>
+     <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>URL SHORTENER</h1>
+    <form action="/edit/<%=id%>" method="POST">
+    <div >
+        <label for="url">Enter the URL</label>
+        <input type="url" name="url" id="url" value="<%=url%>">
+    </div>
+    <div >
+        <label for="shortcode">Custom URL </label>
+        <input type="text" name="shortcode" id="shortcode" value="<%=short_code%>">
+    </div>
+    <button type="submit" class="btn">Update</button>
+    </form>
+</body>
+</html>

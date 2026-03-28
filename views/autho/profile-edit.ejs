@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Edit</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Profile</h1>
+        <div class="form-edit">
+            <form action="/edit-profile"
+             method="post" 
+             id="url-form"
+            class="url-form">
+            <div class="form-group">
+                <label for="name"></label>
+                <input type="text"
+                 name="name" 
+                 id="name" 
+                 value="<%=name%>"
+                 required>
+            </div>
+            <div class="form-btn">
+                <input type="submit" name="shorten" id="shorten" value="Save Chnages">
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

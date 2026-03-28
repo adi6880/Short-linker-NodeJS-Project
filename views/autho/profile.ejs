@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-card">
+    <div class="avatar-header">
+        <span><%=user.name.charAt(0).toUpperCase()%></span>
+    </div>
+
+    <div class="profile-info">
+        <h1 class="profile-name"><%=user.name%></h1>
+        <p class="profile-email"><%=user.email%></p>
+
+        <div class="profile-stats">
+            <div>
+                <strong><%=new Date(user.createdAt).toLocaleDateString()%></strong>
+                Joined
+            </div>
+            <div>
+                <strong><%=user.links ? user.links.length : 0%></strong>
+                Total Links
+            </div>
+        </div>
+
+        <div class="edit-profile">
+            <a href="/edit-profile">Edit Profile</a>
+            <a href="/change-password">Change Password</a>
+        </div>
+
+        <div class="profile-verification">
+            <p class="verification-status">
+                <span class="verification-label">Status:</span>
+                <% if(user.valid){ %>
+                    <span class="verificate-badge verified">Verified</span>
+                <% } else { %>
+                    <span class="verificate-badge not-verified">Unverified</span>
+                    <a href="/email-verify" class="verify-link">Verify Now</a> 
+                <% } %> 
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

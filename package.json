@@ -1,0 +1,36 @@
+{
+  "name": "shoter-link-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "argon2": "^0.44.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mjml": "^4.18.0",
+    "mongodb": "^6.20.0",
+    "mysql2": "^3.15.3",
+    "nodemailer": "^7.0.12",
+    "nodemon": "^3.1.10",
+    "request-ip": "^3.3.0",
+    "resend": "^6.7.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.0"
+  }
+}
